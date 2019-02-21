@@ -1,0 +1,43 @@
+.tab {
+  width: 300px;
+  border: 1px solid rgb(119, 115, 115);
+}
+
+.tab ul,
+.tab li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tab .btn-ct {
+  width: 100%;
+  display: flex;
+}
+
+.tab .btn-ct li {
+  flex: 1;
+  border-right: 1px solid rgb(119, 115, 115);
+  border-bottom: 1px solid rgb(119, 115, 115);
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer
+}
+
+.tab .btn-ct li:last-child {
+  border-right: none;
+}
+
+.tab .btn-ct .active {
+  background: #ccc;
+}
+
+.tab .content.active {
+  display: block;
+}
+
+.tab .content {
+  height: 100px;
+  display: none;
+}
