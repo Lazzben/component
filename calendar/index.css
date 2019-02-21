@@ -1,8 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .calendar {
   width: 250px;
   border: 1px solid #ccc;
   font-size: 20px;
   font-family: serif, cursive, fantasy;
+}
+
+.calendar-ct {
+  margin-left: 100px; 
+  float: left;
 }
 
 .calendar .header {
@@ -49,14 +59,22 @@
 
 .calendar .panel td {
   line-height: 1.2;
+}
+
+.calendar .panel td.cur {
   cursor: pointer;
 }
 
-.calendar .panel .current-date {
+.calendar .panel td.pre,
+.calendar .panel td.next {
+  color: #ccc;
+}
+
+.calendar .panel td.current-date {
   color: #CA2B2B;
 }
 
-.calendar .panel td:hover {
+.calendar .panel td.cur:hover {
   background-color: #ccc;
   color: #fff;
 }
